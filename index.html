@@ -1,131 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  
-  <title>Frontend Mentor | [Blogr]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="main">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- section1 begins -->
-     <div class="section1"></div>
-    <!-- section1 ends  -->
+    <title>Frontend Mentor | [Blogr]</title>
 
-    <!-- section2 begins -->
-     <div class="section2"></div>
-    <!-- section2 ends  -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- section1 begins -->
+      <div class="section1"></div>
+      <!-- section1 ends  -->
 
-    <!-- section3 begins -->
-     <div class="section3"></div>
-    <!-- section3 ends  -->
+      <!-- section2 begins -->
+      <div class="section2"></div>
+      <!-- section2 ends  -->
 
-    <!-- setion4 begins -->
-     <div class="section4"></div>
-    <!-- section4 ends   -->
+      <!-- section3 and 4begins -->
+      <div class="section3">
+        <div class="pt-[16.75rem] md:pt-14">
+          <div
+            class="h-[39rem] bg-gradient-to-r from-[hsl(237,17%,21%)] to-[hsl(237,23%,32%)] rounded-tr-[6.25rem] rounded-bl-[6.25rem] relative md:h-[25rem]"
+          >
+            <div
+              class="absolute top-0 w-full h-full rounded-tr-[6.25rem] rounded-bl-[6.25rem] bg-[url('../images/bg-pattern-circles.svg')] bg-no-repeat bg-[left_-13.25rem_bottom_16rem] md:bg-[left_-13.25rem_bottom_-6.875rem]"
+            ></div>
 
-    <!-- section5 begins -->
-     <div class="section5"></div>
-    <!-- section5 ends  -->
+            <div
+              class="relative z-10 grid gap-4 translate-y-[-11.75rem] md:grid-cols-2 md:gap-0 md:translate-y-[-4.25rem] 2xl:max-w-[81.125rem] 2xl:mx-auto"
+            >
+              <img
+                src="./images/illustration-phones.svg"
+                alt=""
+                aria-hidden="true"
+                class="mx-auto"
+              />
+              <div
+                class="pr-6 text-center md:pt-[11.75rem] md:text-left md:max-w-[35.75rem]"
+              >
+                <h2
+                  class="font-semibold text-[2.5rem] leading-[1.2em] tracking-[-.032em] text-white mb-[1.125rem] md:mb-6"
+                >
+                  State of the Art Infrastructure
+                </h2>
+                <p
+                  class="font-light leading-[1.75em] tracking-[.03em] text-[#ffffff]"
+                >
+                  With reliability and speed in mind, worldwide data centers
+                  provide the backbone for ultra-fast connectivity. This ensures
+                  your site will load instantly, no matter where your readers
+                  are, keeping your site competitive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- section6 begins -->
-     <div class="section6"></div>
-    <!-- section6 ends  -->
+        <div class="pt-16 xl:pt-[6.75rem]">
+          <div
+            class="grid gap-10 text-center xl:grid-cols-2 xl:gap-0 xl:items-center xl:text-left 2xl:max-w-[81.125rem] 2xl:mx-auto"
+          >
+            <div class="laptop-illustration">
+              <img
+                src="./images/illustration-laptop-mobile.svg"
+                alt=""
+                class="block xl:hidden mx-auto"
+              />
 
-  </div>
+              <img
+                src="./images/illustration-laptop-desktop.svg"
+                alt=""
+                class="hidden xl:block mx-auto xl:max-w-none xl:translate-x-[-17.5rem]"
+              />
+            </div>
+            <div class="max-w-2xl pr-6 mx-auto xl:mx-0 xl:max-w-[35.75rem]">
+              <h3
+                class="font-semibold text-[1.75rem] leading-[1.2em] tracking-wider text-[hsl(208,49%,24%)] mb-3 xl:mb-7"
+              >
+                Free, open, simple
+              </h3>
+              <p
+                class="font-light leading-[1.75em] tracking-[.03em] text-[hsl(208,49%,24%)] mb-11 xl:mb-20"
+              >
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to
+                learn.
+              </p>
 
+              <h3
+                class="font-semibold text-[1.75rem] leading-[1.2em] tracking-wider text-[hsl(208,49%,24%)] mb-3 xl:mb-7"
+              >
+                Powerful tooling
+              </h3>
+              <p
+                class="font-light leading-[1.75em] tracking-[.03em] text-[hsl(208,49%,24%)]"
+              >
+                Batteries included. We built a simple and straightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section3 ends  -->
 
+      <!-- section5 begins -->
+      <div class="section5"></div>
+      <!-- section5 ends  -->
 
-  Product
+      <!-- section6 begins -->
+      <div class="section6"></div>
+      <!-- section6 ends  -->
+    </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+    Product Overview Pricing Marketplace Features Integrations Company About
+    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up A modern
+    publishing platform Grow your audience and build your online brand Start for
+    Free Learn More Designed for the future Introducing an extensible editor
+    Blogr features an exceedingly intuitive interface which lets you focus on
+    one thing: creating content. The editor supports management of multiple
+    blogs and allows easy manipulation of embeds such as images, videos, and
+    Markdown. Extensibility with plugins and themes provide easy ways to add
+    functionality or change the looks of a blog. Robust content management
+    Flexible content management enables users to easily move through posts.
+    Increase the usability of your blog by adding customized categories,
+    sections, format, or flow. With this functionality, you’re in full control.
+    State of the Art Infrastructure With reliability and speed in mind,
+    worldwide data centers provide the backbone for ultra-fast connectivity.
+    This ensures your site will load instantly, no matter where your readers
+    are, keeping your site competitive. Free, open, simple Blogr is a free and
+    open source application backed by a large community of helpful developers.
+    It supports features such as code syntax highlighting, RSS feeds, social
+    media integration, third-party commenting tools, and works seamlessly with
+    Google Analytics. The architecture is clean and is relatively easy to learn.
+    Powerful tooling Batteries included. We built a simple and straightforward
+    CLI tool that makes customization and deployment a breeze, but capable of
+    producing even the most complicated sites. Product Overview Pricing
+    Marketplace Features Integrations Company About Team Blog Careers Connect
+    Contact Newsletter LinkedIn
 
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
