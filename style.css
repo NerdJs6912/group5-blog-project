@@ -9,12 +9,18 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: auto;
+}
+
 footer {
   background-color: hsl(240, 10%, 16%);
   font-family: 'Ubuntu' , 'Overpass';
   padding-top: 4rem;
   padding-bottom: 4rem;
   border-top-right-radius: 4rem;
+  margin-top: 3rem;
+  
 }
 
 .footer {
@@ -40,6 +46,8 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-.footer span {
-  /* font-weight: 400; */
+
+.footer1-heading {
+  font-weight: bold;
+  font-size: larger;
 }
