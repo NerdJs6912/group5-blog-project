@@ -13,6 +13,60 @@ body {
   margin: auto;
 }
 
+.container{
+  width: 700px;
+  margin-left: 30%;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px 1px lightgray;
+}
+
+
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.container1 h5:hover{
+  cursor: pointer;
+  color: hsl(292, 16%, 49%);
+}
+
+.container2, .container3 {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Icon1 img{
+  padding-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.Icon3 img{
+  height: 20px;
+  width: 20px;
+}
+
+.icon-minus{
+  display:none;
+}
+
+.wording{
+  display:none;
+}
+
+
 footer {
   background-color: hsl(240, 10%, 16%);
   font-family: 'Ubuntu' , 'Overpass';
