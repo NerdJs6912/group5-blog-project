@@ -1,7 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;500;600&family=Ubuntu:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;500;600&family=Ubuntu:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;500;600&family=Ubuntu:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;500;600&family=Ubuntu:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -13,14 +12,195 @@ body {
   margin: auto;
 }
 
-.container{
+/* section 3 and section 4 styling */
+.section-three {
+  padding-top: 16.75rem;
+}
+
+.blue-background-wrapper {
+  height: 39rem;
+  background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  border-top-right-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.circle-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: left -13.25rem bottom 16rem;
+  border-top-right-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transform: translateY(-11.75rem);
+  max-width: 81.125rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.phones-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-content {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding: 0 1.5rem;
+}
+
+.text-content h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 1.125rem;
+  line-height: 1.2;
+}
+/* .state-of-art {
+  font-weight: 900;
+} */
+.text-content p {
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+}
+
+/* Section four */
+.section-four {
+  padding-top: 4rem;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 81.125rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.laptop-img {
+  max-width: 120%;
+  /* this max width works for the mobile display */
+  height: auto;
+}
+
+.laptop-img.desktop {
+  display: none;
+}
+
+.text-block {
+  color: hsl(208, 49%, 24%);
+  font-weight: 300;
+  max-width: 40rem;
+  padding-right: 1rem;
+}
+
+.text-block h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.text-block p {
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .section-three {
+    padding-top: 3.5rem;
+  }
+
+  .blue-background-wrapper {
+    height: 25rem;
+  }
+
+  .circle-bg {
+    background-position: left -13.25rem bottom -6.875rem;
+  }
+
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateY(-4.25rem);
+    gap: 1rem;
+  }
+
+  .text-content {
+    padding-top: 11.75rem;
+    text-align: left;
+    max-width: 35.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-four {
+    padding-top: 6.75rem;
+  }
+
+  .flex-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    /* gap: 0rem;  */
+  }
+  /* .state-of-art {
+    font-size: 2222px;
+  } */
+  .laptop-img.mobile {
+    display: none;
+  }
+
+  .laptop-img.desktop {
+    display: block;
+    transform: translateX(-15rem);
+    max-width: 130%;
+  }
+
+  .text-block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text-block h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* .text-block p:last-of-type {
+    margin-bottom: 0;
+  } */
+}
+
+/* section 3 and section 4 styling ends */
+
+.container {
   width: 700px;
   margin-left: 30%;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0px 1px 1px 1px lightgray;
 }
-
 
 .top {
   display: flex;
@@ -35,46 +215,45 @@ body {
   cursor: pointer;
 }
 
-.container1 h5:hover{
+.container1 h5:hover {
   cursor: pointer;
   color: hsl(292, 16%, 49%);
 }
 
-.container2, .container3 {
+.container2,
+.container3 {
   padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.Icon1 img{
+.Icon1 img {
   padding-right: 10px;
   height: 20px;
   width: 20px;
 }
 
-.Icon3 img{
+.Icon3 img {
   height: 20px;
   width: 20px;
 }
 
-.icon-minus{
-  display:none;
+.icon-minus {
+  display: none;
 }
 
-.wording{
-  display:none;
+.wording {
+  display: none;
 }
-
 
 footer {
   background-color: hsl(240, 10%, 16%);
-  font-family: 'Ubuntu' , 'Overpass';
+  font-family: "Ubuntu", "Overpass";
   padding-top: 4rem;
   padding-bottom: 4rem;
   border-top-right-radius: 4rem;
   margin-top: 3rem;
-  
 }
 
 .footer {
