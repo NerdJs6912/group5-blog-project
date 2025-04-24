@@ -10,6 +10,132 @@
 
 body {
   margin: auto;
+  font-family: 'Overpass', sans-serif;
+}
+
+/* Remove dots from all lists */
+ul {
+    list-style: none;
+}
+
+/* Remove underlines from all links */
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+}
+
+/* Buttons */
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.signup-btn {
+    background: white;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.login-btn {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.start-btn {
+    background: white;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.learn-btn {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Future section */
+.future-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.future-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.future-image img {
+    max-width: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .nav, .nav-left, .nav-links {
+        flex-direction: column;
+    }
+    
+    .future-content {
+        flex-direction: column;
+    }
 }
 
 /* section 3 and section 4 styling */
