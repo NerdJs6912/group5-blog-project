@@ -1,3 +1,34 @@
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  // Toggle dropdown on click
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('a');
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default anchor behavior
+      // Close other open dropdowns
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove('active');
+      });
+      // Toggle current dropdown
+      dropdown.classList.toggle('active');
+    });
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown')) {
+      dropdowns.forEach(dropdown => {
+        dropdown.classList.remove('active');
+      });
+    }
+  });
+});
+
+
+
 let plusButtons = document.querySelectorAll(".plus");
 let minusButtons = document.querySelectorAll(".icon-minus");
 let paragraphs = document.querySelectorAll(".wording");

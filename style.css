@@ -16,7 +16,9 @@ body {
 /* Remove dots from all lists */
 ul {
     list-style: none;
-    display: none;
+    /* display: none; */
+    /* background: white; */
+    color: black;
 }
 
 /* Remove underlines from all links */
@@ -54,13 +56,52 @@ a {
 }
 
 .nav-links a {
-    color: white;
+    color: black;
+    font-weight: 300;
+    font-size: 14px;
 }
 
-.dropdown:hover {
-    text-decoration: underline;
+.nav-links a:hover{
+  font-weight: 600;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown span {
+  color: white;
+}
+
+.dropdown span:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: white;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  position: absolute;
+  line-height: 2rem;
+  margin-top: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  min-width: 140px;
+}
+
+/* Show dropdown on click */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+/* Optional: Rotate arrow when active */
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
 /* Buttons */
 .nav-right {
     display: flex;
@@ -84,6 +125,24 @@ a {
 .login-btn {
     color: white;
     text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger-icon {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.active .hamburger-icon {
+  transform: rotate(90deg); /* Or adjust for desired effect */
 }
 
 /* Hero section */
@@ -153,13 +212,37 @@ a {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .nav, .nav-left, .nav-links {
-        flex-direction: column;
-    }
-    
-    .future-content {
-        flex-direction: column;
-    }
+  
+  .hamburger {
+    display: block;
+  }  
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-right {
+    display: none;
+  }
+  
+  .future-content {
+    flex-direction: column;
+  }
+  
+  .header{
+    border-bottom-left-radius: 6rem;
+  }
+  
+  .hero {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  
+  .hero p {
+    margin-bottom: 50px;
+  }
+  
+
 }
 
 /* section 3 and section 4 styling */
